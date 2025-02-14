@@ -1,5 +1,78 @@
-.page__header {
+@use '../core/variables' as vars;
+
+.header_container {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  background-image: url('../images/cover.jpeg');
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
+.header_hamburger_menu {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  padding: 10px;
+  color: white;
+  background-color: #6c933e;
+  display:flex;
+}
+
+.header_title { 
+    font-family: "Roboto Slab", serif;
+    color: white;
+    align-self: flex-end;
+}
+
+.header_subtitle {
+  font-family: "Roboto regular";
+  display: flex;
+  color: white;
+  align-self: flex-end;
+}
+
+  .header_texts {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    margin-top: auto;
+    padding: 5px;
+    margin-bottom: 40px;
+  }
+
+  round-button {
+
+  }
+
+  .header_icon {
+    display: inline-flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-decoration: none;
+    font-size: 5px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    text-align: center;
+
+    &_icon_chevron {
+      text-align: center;
+    }
+  }
+
+  .header_icon:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+  }
+
+
+  

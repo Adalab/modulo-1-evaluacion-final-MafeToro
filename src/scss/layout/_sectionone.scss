@@ -1,0 +1,36 @@
+@use '../core/variables' as vars;
+
+.sectionone {
+    padding: 20px;
+
+&_title {
+    color:#6c933e;
+    font-family: "Roboto Slab", serif;
+}
+}
+
+.sectionone_subtitle {
+    font-family: "Roboto Slab", regular;
+}
+
+.sectionone_p {
+    font-family: "Roboto";
+    margin-bottom: 20px;
+}
+
+.sectionone_button {
+    font-family: 'Roboto';
+    font-size: 30px;
+    width: fit-content;
+    padding: 10px;
+    padding-inline: 50px;
+    border-radius: 30px;
+    background-color: white;
+    border: solid #6c933e 3px;
+    color: #6c933e;
+    }
+
+.sectionone_title {
+    font-family: 'Roboto regular';
+    font-size: 15px;
+}
