@@ -29,7 +29,14 @@
     background-color: white;
     border: solid #6c933e 3px;
     color: #6c933e;
+    transition: transform 0.3s ease, background-color 0.3s ease;
     }
+
+    .sectionone_button:hover {
+        transform: scale(1.1);
+        background-color: vars.$main-color;
+        color: white; 
+       }
 
 .sectionone_title {
     font-family: 'Roboto regular';

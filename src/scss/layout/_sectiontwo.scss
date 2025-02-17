@@ -1,3 +1,5 @@
+@use '../core/variables' as vars;
+
 .sectiontwo {
   background-color: #d9e4cc;
   &_title {
@@ -47,8 +49,15 @@
     color: white;
     display: flex;
     align-self: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
   }
 }
+
+.articles_sectiontwo_button:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: vars.$main-color; 
+ }
 
 .articles_producto_img {
   width: 150px;
@@ -93,6 +102,7 @@ display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
+  transition: background 0.3s ease;
 }
 
 /* Tablet */
