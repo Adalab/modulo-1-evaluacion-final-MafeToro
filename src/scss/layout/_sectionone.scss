@@ -15,7 +15,8 @@
 
 .sectionone_p {
     font-family: "Roboto";
-    margin-bottom: 20px;
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 
 .sectionone_button {
@@ -33,4 +34,22 @@
 .sectionone_title {
     font-family: 'Roboto regular';
     font-size: 15px;
+    padding-bottom: 10px;
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+.sectionone {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.sectionone_subtitle {
+    font-size: 40px;
+}
+
+.sectionone_p {
+    font-size: 20px;
+}
+
 }

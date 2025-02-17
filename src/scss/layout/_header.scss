@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-position-x: 80%
 }
 
 .header_hamburger_menu {
@@ -49,10 +50,6 @@
     margin-bottom: 40px;
   }
 
-  round-button {
-
-  }
-
   .header_icon {
     display: inline-flex;
     align-items: center;
@@ -64,6 +61,7 @@
     border-radius: 50%;
     transition: background 0.3s ease;
     text-align: center;
+    justify-content: center;
 
     &_icon_chevron {
       text-align: center;
@@ -71,8 +69,25 @@
   }
 
   .header_icon:hover {
-    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+    background-color: #0056b3;
   }
 
+/* Tablet */
+@media (min-width: 780px) {
 
-  
+  header.texts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .header_title {
+    font-size: 70px;
+  }
+
+  .header_subtitle {
+    font-size: 35px;
+    font-family: vars.$third-font;
+    font-weight: 300;
+  }
+}
